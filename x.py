@@ -1,4 +1,10 @@
 import streamlit as st
+import Data_Loader as dl
+
+## Sending the path to the data preprocessing 
+path = '/content/Fake_data.xlsx'; 
+## Obtaining the 
+dates_array = dl.data_preprocessing(path);
 
 st.cache()
 
@@ -21,6 +27,9 @@ with col1:
     <p class="a"> Temperature Sensor Value : {temperature}</p>
     """
     st.markdown(temperature_str, unsafe_allow_html=True); # st.write(Temperature Sensor Value : ",temperature)
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        st.write(date);
 
 with col2:
     ## Pressure
