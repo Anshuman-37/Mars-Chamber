@@ -12,8 +12,7 @@ st.cache()
 ## The Header for the application
 st.markdown("<h1 style='text-align: center;'>Mars Chamber Controll</h1>", unsafe_allow_html=True)
 st.text("");st.text("")
-col1, col2, col3, col4 = st.columns(4)
-
+col1,col2 = st.columns([6,1],gap="large")
 with col1:
     ## Temperature
     st.subheader('Temperature')
@@ -29,10 +28,11 @@ with col1:
     st.markdown(temperature_str, unsafe_allow_html=True); # st.write(Temperature Sensor Value : ",temperature)
     for i in dates_array:
         date = i.return_date() ; print(date);
-        st.write(date);
+        time,temp = i.return_plot_data_temperature();
+        data = {'time' : time, 'temp':temp}
+        st.write(date); st.line_chart(data); 
 
-with col2:
-    ## Pressure
+        ## Pressure
     st.subheader('Pressure')
     pressure = st.slider('Select the appropriate pressure value (mbar) : ',0,1000);
     pressure_str = f""" 
@@ -44,9 +44,13 @@ with col2:
     <p class="a"> Pressure Sensor Value : {pressure}</p>
     """
     st.markdown(pressure_str, unsafe_allow_html=True); #st.write("Pressure Sensors :", pressure)
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,pressure = i.return_plot_data_pressure();
+        data = {'time' : time, 'pressure':pressure}
+        st.write(date); st.line_chart(data); 
 
-with col3:
-    ## Humidity
+    # Humidity
     st.subheader('Humidity')
     humidity = st.slider('Select the appropriate humidity (%): ',0,100);
     humidity_str = f"""
@@ -58,8 +62,14 @@ with col3:
     <p class="a"> Humidity Sensor Value : {humidity}</p>
     """
     st.markdown(humidity_str, unsafe_allow_html=True); #st.write("Humidity Sensors :", humidity)
-with col4:
-    ## Uv Light
+    
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,humidity = i.return_plot_data_humidity();
+        data = {'time' : time, 'humidity':humidity}
+        st.write(date); st.line_chart(data); 
+    
+    #Uv Light
     st.subheader('UV light')
     uv_light= st.slider("Toggle the light 0 for OFF and 1 for ON :", 0, 1, 1)
     uv_light_str = f""" 
@@ -71,3 +81,15 @@ with col4:
     <p class="a"> UV Light Sensor Status : {uv_light}</p>
     """
     st.markdown(uv_light_str, unsafe_allow_html=True); #st.write("UV Light :", uv_light)
+
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,uv_light = i.return_plot_data_uv_light();
+        data = {'time' : time, 'uv_light':uv_light}
+        st.write(date); st.line_chart(data); 
+
+
+
+with col2:
+    st.subheader('Temperature');
+ 
