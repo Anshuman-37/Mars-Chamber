@@ -69,7 +69,7 @@ class Day:
         '''
         return self.time,self.int_time,self.temperature,self.pressure,self.humidity,self.uv_light
     
-    def return_plot_data_temp(self):
+    def return_plot_data_temperature(self):
         '''
             Params - Reference 
             Result - Returns the integer time data and temperature 
