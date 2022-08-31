@@ -118,7 +118,7 @@ def data_preprocessing(path):
     ## Iterating over all dates 
     for i in all_dates:
         ## Setting the dates from the plot
-        x = Day(); x.set_date(i); print(x.return_date());
+        x = Day(); x.set_date(i); #print(x.return_date());
         ## Variables to store the values for the fields
         time = []; temp = []; pressure = []; humidity = []; uv_light = []; 
         ## Iterating over dataframe to obtain the values 
