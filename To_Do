@@ -1,6 +1,5 @@
 This file represents the things to do and the things that are done 
 
- 
 Project in Steps 
 
 Develop the web application interface basic 
@@ -10,9 +9,20 @@ Develop the web application interface basic
     There should be a real time graph that should plot the values of the sensor with regards to the time
     There should be an indicator for sensors that would tell which sensors or valves are active at the moment
 
+Python script to connect to the senors 
+    The script should follow a OOPs approach and should be able to connect with all the present sensors
+    The sensors should be able be able to controll the sensors
 
-
+Python script to controll the sensors
+    The script should interact with the data loader and activate the sensors at sepcific time
+    The script should return the activity of the sensors to the front end of the application
+    The script should save the values in the csv file that should be read by the front end at regular intervals
+     
 
 Things done
 
+Develop the web application interface basic 
 
+
+    There should be sliding windows
+    It is able to read commands from the python script 
