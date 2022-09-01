@@ -1,0 +1,18 @@
+This file represents the things to do and the things that are done 
+
+ 
+Project in Steps 
+
+Develop the web application interface basic 
+    There should be sliding windows
+    There should be sliders and text boxes to set sensor values
+    It should be able to read the commands from the excel sheet and execute them
+    There should be a real time graph that should plot the values of the sensor with regards to the time
+    There should be an indicator for sensors that would tell which sensors or valves are active at the moment
+
+
+
+
+Things done
+
+
