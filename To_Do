@@ -21,8 +21,8 @@ Python script to controll the sensors
 
 Things done
 
-Develop the web application interface basic 
-
-
+Develop the web application interface basic - Partially Done 
     There should be sliding windows
     It is able to read commands from the python script 
+    The graph is not set to plot real time data - inprogress
+    
