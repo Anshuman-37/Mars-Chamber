@@ -11,9 +11,9 @@ Develop the web application interface basic
 
 Python script to connect to the senors 
     The script should follow a OOPs approach and should be able to connect with all the present sensors
-    The sensors should be able be able to controll the sensors
+    The script should be able be able to controll the sensors
 
-Python script to controll the sensors
+Python script to controll the sensors with commands
     The script should interact with the data loader and activate the sensors at sepcific time
     The script should return the activity of the sensors to the front end of the application
     The script should save the values in the csv file that should be read by the front end at regular intervals
@@ -23,6 +23,18 @@ Things done
 
 Develop the web application interface basic - Partially Done 
     There should be sliding windows
+    There are sliders but still cant change to a given value - inprogress need to study a bit more REACT (2 weeks)
     It is able to read commands from the python script 
     The graph is not set to plot real time data - inprogress
-    
+    There is no indicator for the sensors yet - waiting for the python script to do it 
+
+
+Python script to connect to the senors
+    Created a Frame Work to connect to the sensors - waiting to go in the lab to work with real sensors
+    The script still can't controll the sensors - still havent worked with sensors 
+
+
+Python script to controll the sensors with commands
+    The script should be able to interact with the data loader - can be done easily when sensors are connected to the script
+    The script is still not ready to return the values of the sensors - Could be done easily by using a OOPS approach 
+    The script is still not ready to save values in the csv values
