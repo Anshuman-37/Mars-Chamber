@@ -5,7 +5,7 @@ import Data_Loader as dl
 path = '/Users/anshuman/Desktop/Personal_Projects /Mars_Chamber/Fake_data.xlsx'; 
 ## Obtaining the 
 dates_array = dl.data_preprocessing(path);
-
+st.set_page_config(layout="wide")
 st.cache()
 
 

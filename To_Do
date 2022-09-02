@@ -29,7 +29,7 @@ Develop the web application interface basic - Partially Done
     There is no indicator for the sensors yet - waiting for the python script to do it 
 
 
-Python script to connect to the senors
+Python script to connect to the sensors
     Created a Frame Work to connect to the sensors - waiting to go in the lab to work with real sensors
     The script still can't controll the sensors - still havent worked with sensors 
 
