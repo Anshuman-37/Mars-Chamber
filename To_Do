@@ -24,8 +24,8 @@ Things done
 Develop the web application interface basic - Partially Done 
     There should be sliding windows
     There are sliders but still cant change to a given value - inprogress need to study a bit more REACT (2 weeks)
-    It is able to read commands from the python script 
-    The graph is not set to plot real time data - inprogress
+    It is able to read commands from the python script - In progress to extract data from the CSV in real time
+    The graph is not set to plot real time data - inprogress 
     There is no indicator for the sensors yet - waiting for the python script to do it 
 
 
