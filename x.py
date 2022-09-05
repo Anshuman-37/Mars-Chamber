@@ -12,7 +12,7 @@ st.cache()
 ## The Header for the application
 st.markdown("<h1 style='text-align: center;'>Mars Chamber Controll</h1>", unsafe_allow_html=True)
 st.text("");st.text("")
-col1,col2 = st.columns([6,1],gap="large")
+col1,col2,col3 = st.columns([2,2,3],gap="large")
 with col1:
     ## Temperature
     st.subheader('Temperature')
@@ -26,11 +26,11 @@ with col1:
     <p class="a"> Temperature Sensor Value : {temperature}</p>
     """
     st.markdown(temperature_str, unsafe_allow_html=True); # st.write(Temperature Sensor Value : ",temperature)
-    for i in dates_array:
-        date = i.return_date() ; print(date);
-        time,temp = i.return_plot_data_temperature();
-        data = {'time' : time, 'temp':temp}
-        st.write(date); st.line_chart(data); 
+    # for i in dates_array:
+    #     date = i.return_date() ; print(date);
+    #     time,temp = i.return_plot_data_temperature();
+    #     data = {'time' : time, 'temp':temp}
+    #     st.write(date); st.line_chart(data); 
 
     ## Pressure
     st.subheader('Pressure')
@@ -44,11 +44,11 @@ with col1:
     <p class="a"> Pressure Sensor Value : {pressure}</p>
     """
     st.markdown(pressure_str, unsafe_allow_html=True); #st.write("Pressure Sensors :", pressure)
-    for i in dates_array:
-        date = i.return_date() ; print(date);
-        time,pressure = i.return_plot_data_pressure();
-        data = {'time' : time, 'pressure':pressure}
-        st.write(date); st.line_chart(data); 
+    # for i in dates_array:
+    #     date = i.return_date() ; print(date);
+    #     time,pressure = i.return_plot_data_pressure();
+    #     data = {'time' : time, 'pressure':pressure}
+    #     st.write(date); st.line_chart(data); 
 
     # Humidity
     st.subheader('Humidity')
@@ -63,11 +63,11 @@ with col1:
     """
     st.markdown(humidity_str, unsafe_allow_html=True); #st.write("Humidity Sensors :", humidity)
     
-    for i in dates_array:
-        date = i.return_date() ; print(date);
-        time,humidity = i.return_plot_data_humidity();
-        data = {'time' : time, 'humidity':humidity}
-        st.write(date); st.line_chart(data); 
+    # for i in dates_array:
+    #     date = i.return_date() ; print(date);
+    #     time,humidity = i.return_plot_data_humidity();
+    #     data = {'time' : time, 'humidity':humidity}
+    #     st.write(date); st.line_chart(data); 
     
     #Uv Light
     st.subheader('UV light')
@@ -82,14 +82,40 @@ with col1:
     """
     st.markdown(uv_light_str, unsafe_allow_html=True); #st.write("UV Light :", uv_light)
 
+    # for i in dates_array:
+    #     date = i.return_date() ; print(date);
+    #     time,uv_light = i.return_plot_data_uv_light();
+    #     data = {'time' : time, 'uv_light':uv_light}
+    #     st.write(date); st.line_chart(data); 
+
+
+
+with col2:
+    st.subheader('Temperature');
+
+with col3:
+
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,temp = i.return_plot_data_temperature();
+        data = {'time' : time, 'temp':temp}
+        st.write(date); st.line_chart(data); 
+    
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,pressure = i.return_plot_data_pressure();
+        data = {'time' : time, 'pressure':pressure}
+        st.write(date); st.line_chart(data); 
+    
+    for i in dates_array:
+        date = i.return_date() ; print(date);
+        time,humidity = i.return_plot_data_humidity();
+        data = {'time' : time, 'humidity':humidity}
+        st.write(date); st.line_chart(data);
+    
     for i in dates_array:
         date = i.return_date() ; print(date);
         time,uv_light = i.return_plot_data_uv_light();
         data = {'time' : time, 'uv_light':uv_light}
         st.write(date); st.line_chart(data); 
 
-
-
-with col2:
-    st.subheader('Temperature');
- 
