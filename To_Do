@@ -28,13 +28,19 @@ Develop the web application interface basic - Partially Done
     The graph is not set to plot real time data - inprogress 
     There is no indicator for the sensors yet - waiting for the python script to do it 
 
+#############################################################################
 
 Python script to connect to the sensors
     Created a Frame Work to connect to the sensors - waiting to go in the lab to work with real sensors
-    The script still can't controll the sensors - still havent worked with sensors 
+    The script still can't controll the sensors - still haven't worked with sensors
 
-
+Things Done 
+    Connected to the sensors and created their OOPS format
+    Stored the result in csv file 
+    Plotting the real time values from the sensors
+    
+#############################################################################
 Python script to controll the sensors with commands
-    The script should be able to interact with the data loader - can be done easily when sensors are connected to the script
+    The script should be able to interact with the data loader - can be done easily when sensors are connected to the script 
     The script is still not ready to return the values of the sensors - Could be done easily by using a OOPS approach 
     The script is still not ready to save values in the csv values
