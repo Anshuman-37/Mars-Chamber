@@ -86,3 +86,9 @@ while(i<1000):
 df = pd.DataFrame(lst, columns = data.keys())
 print(df)
 df.to_csv('IDK.csv', index=False)
+
+
+'''
+t = time.localtime(); current_time = time.strftime("%H:%M:%S", t); print(current_time);
+    x = int(time.strftime('%H%M%S',t)); 
+'''
