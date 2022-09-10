@@ -38,7 +38,8 @@ Things Done
     Connected to the sensors and created their OOPS format
     Stored the result in csv file 
     Plotting the real time values from the sensors
-    
+    Plotting the real time datas from the senors humidity and temperature
+
 #############################################################################
 Python script to controll the sensors with commands
     The script should be able to interact with the data loader - can be done easily when sensors are connected to the script 
