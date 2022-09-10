@@ -123,11 +123,11 @@ class sensors:
         Result - Will set the port number of sensor by selecting the vendor
         '''
         # Declaring the regex for Vaisala 
-        humi_temp_regex = re.compile(r'Vaisala'); 
+        humi_temp_regex = re.compile(r'Vaisala');
         # Declaring the regex value for Temperature 
         temp_regex = re.compile(r'AU{1}'); 
         # Declaring the regex value for Pressure
-        pressure_regex = re.compile(r'FT{1}');
+        pressure_regex = re.compile(r'FT{1}')
         # Traversing over the list of ports
         for p in ports:
             # Searching for the Vaisala port 
@@ -142,6 +142,7 @@ class sensors:
             if(pressure_regex.search(p.hwid)):
                 self.pressure_sensor.set_comp_port(p.device);
             
+
     def set_sensor_data(self):
         '''
         Params - Self Reference
@@ -153,7 +154,7 @@ class sensors:
             ## Command to recieve the data 
             data = 'send'; data += "\r\n";
             ## Send the command and obtain the result
-            ser.write(data.encode()); obtained_data = ser.readline();
+            ser.write(data.encode()); obtained_data = ser.readline(); ser.write(data.encode()); obtained_data = ser.readline()
             ## Set the sensor values for the object of humi_temp_sensor 
             self.humi_temp_sensor.set_sensors_values(obtained_data);
             ## Close the connection
@@ -184,7 +185,6 @@ class sensors:
         ''' 
         ## TODO add pressure sensor as well once you obtain the values
         return self.humi_temp_sensor,self.temp_sensor; 
-
 
 
 
