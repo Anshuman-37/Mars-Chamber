@@ -44,4 +44,3 @@ Things Done
 Python script to controll the sensors with commands
     The script should be able to interact with the data loader - can be done easily when sensors are connected to the script 
     The script is still not ready to return the values of the sensors - Could be done easily by using a OOPS approach 
-    The script is still not ready to save values in the csv values
