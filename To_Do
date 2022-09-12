@@ -44,3 +44,11 @@ Things Done
 Python script to controll the sensors with commands
     The script should be able to interact with the data loader - can be done easily when sensors are connected to the script 
     The script is still not ready to return the values of the sensors - Could be done easily by using a OOPS approach 
+
+
+
+#############################################################################
+Write a threading based interface for the application and connect the backend to the fronted GUI
+    This will allow and let us call the values from the GUI and the Sensors simultanouesly 
+    The variables will be stored in the shared memory. 
+    Due to this they can be accessed by frontend and backend of the application
