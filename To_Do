@@ -54,3 +54,5 @@ Write a threading based interface for the application and connect the backend to
     Due to this they can be accessed by frontend and backend of the application
 
     Threading done achieving a 5x speed up to display the sensors data and 3x speed with the graphs in the code
+    Successfully implemented the heat control sensor and is able to control its switching on and off with the use of Threading. 
+    
