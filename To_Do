@@ -58,3 +58,7 @@ Write a threading based interface for the application and connect the backend to
 
 
 The next steps are to implement a reading of CSV file from which we will be able to read the commands those commands will be used to update the temperature sensors and the other sensors.
+
+##############################################################################
+
+Documentation should be added to the code. Start documenting the code
