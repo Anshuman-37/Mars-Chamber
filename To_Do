@@ -56,8 +56,11 @@ Write a threading based interface for the application and connect the backend to
     Threading done achieving a 5x speed up to display the sensors data and 3x speed with the graphs in the code
     Successfully implemented the heat control sensor and is able to control its switching on and off with the use of Threading. 
 
+    Implement the code for the mosfet and then extend it to get the values from the queue and then implement the process queue from the csv file.
+
 
 The next steps are to implement a reading of CSV file from which we will be able to read the commands those commands will be used to update the temperature sensors and the other sensors.
+
 
 ##############################################################################
 
