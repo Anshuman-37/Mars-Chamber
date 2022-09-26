@@ -66,3 +66,29 @@ The next steps are to implement a reading of CSV file from which we will be able
 t##############################################################################
 
 Documentation should be added to the code. Start documenting the code
+
+import time
+from queue import Queue
+q = Queue()
+
+for i in range(0,len(te)):
+    time_in_seconds = float(te[i].split(":")[0])*3600+float(te[i].split(":")[1])*60+float(te[i].split(":")[2])
+    # print(time_in_seconds);
+    # print(tmp)
+    x = {'time':time_in_seconds,'temp':float(temp[i])}
+    # dct = {'time':time_in_seconds,'temp':temp[0]} 
+    q.put(x)
+
+while(not q.empty()):
+    
+    x = q.get()
+    te = x['time']
+    try:
+        print('Will sleep for seconds - >',te)
+        time.sleep()
+    except KeyboardInterrupt:
+        print('Lode code chal raha tha')
+
+
+
+print('Asji size dekhlo q ka ->', q.qsize())
